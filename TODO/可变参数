@@ -1,0 +1,13 @@
+## 可变参数
+
+### 应用
+
+```c++
+// 如何解释和理解下面的代码？
+#define log(fmt, args...) printf("[%s][%d]: " fmt "\n", __func__, __LINE__, ##args);
+```
+
+```c++
+// 如何展开下面的diam？
+#define log(...) ???
+```
